@@ -22,15 +22,14 @@ class CardTableViewCell: UITableViewCell {
         
         button.addPassButtonStyle = .blackOutline
         button.addTarget(self, action: #selector(passTouchUpInside), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        let scale = CGFloat(floatLiteral: 1)
+        let scale = CGFloat(floatLiteral: 0.9)
         button.transform = CGAffineTransform(scaleX: scale, y: scale)
         
         appleStack.addArrangedSubview(button)
     }
     
     @objc func passTouchUpInside() {
-        print("presiono")
+        print("Tamaño")
         print("ancho \(button.frame.size.width)")
         print("alto \(button.frame.size.height)")
     }

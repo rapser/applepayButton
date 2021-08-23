@@ -12,8 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let cards = ["4242 **** **** 7483", "4242 **** **** 7483", "4242 **** **** 7483"]
-    let names = ["Pedro Silva", "Miguel Grau Seminario", "Francisco Bolognesi Cervantes"]
+    let cards = ["**** 1824 (1)", "**** 1880 (1)", "**** 1968 (1)"]
+    let names = ["Caja Huancayo Oro", "Caja Sullana Black", "Caja Ica White"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +63,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 76
+        return 80
     }
 }
 
